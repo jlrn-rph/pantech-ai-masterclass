@@ -56,7 +56,7 @@ training_dataset = train_datagen.flow_from_directory('deep-learning/hand-gesture
                                             class_mode = 'categorical')
 
 # flow validation images in a specified batch size using validation_datagen generator
-validation_dataset = validation_datagen.flow_from_directory('deep-learning/hand-gesture-recognition/dataset/train',
+validation_dataset = validation_datagen.flow_from_directory('deep-learning/hand-gesture-recognition/dataset/val',
                                             target_size = (256, 256),
                                             color_mode = 'grayscale',
                                             batch_size = batch_size,
