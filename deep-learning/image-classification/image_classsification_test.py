@@ -6,11 +6,11 @@ import numpy as np
 from keras.preprocessing import image
 
 # load the model
-json_file = open('deep-learning/image-classification/model.json', 'r')
+json_file = open('deep-learning/image-classification/model/model.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 model = model_from_json(loaded_model_json)
-model.load_weights("deep-learning/image-classification/model_weights.h5")
+model.load_weights("deep-learning/image-classification/model/model_weights.h5")
 print("Loaded model from disk")
 
 # classify the image 
